@@ -1,0 +1,1041 @@
+/*------Reset CSS-----*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*------Estilos del index.html----*/
+/*------Grid general-----*/
+#bodyGrid{
+    display: grid;
+}
+
+                                    /*-----------Estilos del index.html---------*/
+                                        /*-----------Vista movil---------*/
+
+@media only screen and (max-width:600px) {
+
+    #bodyGrid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+                            'header'
+                            'main'
+                            'section'
+                            'footer';
+
+    }
+
+    .mainHeader{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 35% 65% ;
+        grid-template-areas:
+                            'logo'
+                            'navbar';
+        grid-area: header;
+        justify-items: center;
+
+    }
+
+    #boxInfo{
+        display: none;
+    }
+
+    #containerHeaderIndex{
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #containerLogo{
+        grid-area: logo;
+        width: 100%;
+    }
+
+    #navBar{
+        grid-area: navbar;
+    }
+
+    .listMobile{
+        list-style: none;
+        text-align: center;
+    }
+
+    .textNavbar{
+        color: rgb(22, 133, 177);
+
+    }
+
+    #header__Image{
+        display: flex;
+        height: 500px;
+        flex-direction: column;
+        background-image: url(../img/Headerbg.jpg);
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    .image_Title{
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        margin: 10rem 0 0.8rem 0;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+
+    .image_Paragraph{
+        text-align: center;
+        color: white;
+        margin: 0.5rem 0 0 0;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+
+    .containerIndexMain{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #containerButton{
+        margin-top: 5rem;
+    }
+
+    .buttonMain{
+        text-align: center;
+        padding: 10px;
+        border: 1px white solid;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.212);
+
+    }
+
+    .containerIndexMain{
+        display: flex;
+        grid-area: section;
+    }
+
+    .imgCard{
+        border-radius: 10px;
+    }
+
+    .containerIndexCards{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    }
+
+    .titleCardIndex{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: large;
+        text-transform: uppercase;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-shadow: blue 0.1em 0.1em 1.1em;
+
+    }
+
+    .serviceDescription{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0 0.5rem 0 0.5rem;
+
+    }
+
+    .sectionMediumTitle{
+        text-align: center;
+        margin: 0.5rem 0 2rem 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: large;
+        text-transform: uppercase;
+    }
+
+    #cpuImg{
+        display: flex;
+        justify-content: center;
+        height: 250px;
+
+    }
+
+    @supports(object-fit: cover){
+        #cpuImg img{
+          height: 90%;
+          width: 90%;
+          object-fit: contain;
+          object-position: center center;
+          border-radius: 1rem;
+          filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.9));
+
+        }
+
+    }
+
+    #sectionVideoBox{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        grid-area: section;
+
+    }
+
+    #YoutubeVideo{
+        text-align: center;
+        width: 98%;
+        height: 300px;
+        border-radius: 2px;
+
+
+    }
+
+    .containerTable{
+        display: flex;
+        justify-content: center;
+    }
+
+    #cpuTable th, #cpuTable td{
+        border: 1px rgba(0, 0, 0, 0.021) solid;
+        text-align: center;
+    }
+
+    #cpuTable th{
+        background-color: rgb(80, 150, 255);
+        text-transform: uppercase;
+        font-size: small;
+    }
+
+    #cpuTable td{
+        background-color: rgba(0, 0, 0, 0.274);
+        text-transform: capitalize;
+        font-size: small;
+        padding: 0.5rem;
+    }
+
+    .ContainerFooter{
+        background-color: #040325;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(26,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23040325'/%3E%3Cstop offset='1' stop-color='%23070621'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(180,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23020B52' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23020B52' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(264,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23020B52' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23020B52' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background by SVGBackgrounds.com */
+    }
+
+    #siteMapTitle{
+        text-align: center;
+        margin: 0.5rem 0 0.5rem 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: medium;
+        text-transform: uppercase;
+        color: blanchedalmond;
+
+    }
+
+    .containerSponsor{
+        display: flex;
+    }
+
+    #mapSiteList{
+        color: blanchedalmond;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .sponsorText{
+        color: blanchedalmond;
+        text-align: center;
+
+    }
+
+    #sponsorList{
+        list-style: none;
+    }
+
+    .copyRight{
+        color: white;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: x-small;
+
+    }
+
+                                        /*-----------Estilos del mantenimiento.html---------*/
+    #containerCards{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 2rem;
+
+    }
+
+    .containerMain{
+        display: flex;
+        width: 100%;
+        padding-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(211, 211, 211, 0.438);
+
+    }
+
+    .cardImg{
+        border-radius: 6px;
+    }
+
+    .mttoCardTitle{
+        font-size: x-large;
+        text-transform: uppercase;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .mttoCardText{
+        font-size: medium;
+        text-align: center;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .btnCard{
+        padding: 1rem 2rem;
+        border: 1px white solid;
+        background-color: grey;
+        border-radius: 5px;
+        color: white;
+        font-size: medium;
+    }
+
+    #tablaPrecios{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+        align-items: center;
+    }
+
+    .generaltitle{
+        font-size: x-large;
+        text-align: center;
+        text-decoration: underline;
+        margin: 0 0 2rem 0;
+    }
+
+    #containerMarks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+                                    /*-----------Estilos del index.html---------*/
+                                        /*-----------Vista tablet---------*/
+
+@media only screen and (min-width:601px) {
+
+    #bodyGrid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+                            'header'
+                            'main'
+                            'section'
+                            'footer';
+
+    }
+
+    .mainHeader{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 35% 65% ;
+        grid-template-areas:
+                            'logo'
+                            'navbar';
+        grid-area: header;
+        justify-items: center;
+
+    }
+
+    #boxInfo{
+        display: none;
+    }
+
+    #containerHeaderIndex{
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #containerLogo{
+        grid-area: logo;
+        width: 100%;
+    }
+
+    #navBar{
+        grid-area: navbar;
+    }
+
+    .listMobile{
+        list-style: none;
+        text-align: center;
+    }
+
+    .textNavbar{
+        color: rgb(22, 133, 177);
+
+    }
+
+    #header__Image{
+        display: flex;
+        height: 500px ;
+        flex-direction: column;
+        background-image: url(../img/Headerbg.jpg);
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    .image_Title{
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        margin: 10rem 0 0.8rem 0;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+
+    .image_Paragraph{
+        text-align: center;
+        color: white;
+        margin: 0.5rem 0 0 0;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+
+    .containerIndexMain{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #containerButton{
+        margin-top: 5rem;
+    }
+
+    .buttonMain{
+        text-align: center;
+        padding: 10px;
+        border: 1px white solid;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.212);
+
+    }
+
+    .containerIndexMain{
+        display: flex;
+        grid-area: section;
+    }
+
+    .containerIndexCards{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    }
+
+    .imgCard{
+        width: 500px;
+        border-radius: 10px;
+    }
+
+    .titleCardIndex{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: large;
+        text-transform: uppercase;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-shadow: blue 0.1em 0.1em 1.1em;
+
+    }
+
+    .serviceDescription{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0 0.5rem 0 0.5rem;
+
+    }
+
+    #sectionVideoBox{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        grid-area: section;
+
+    }
+
+    .sectionMediumTitle{
+        text-align: center;
+        margin: 0.5rem 0 2rem 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: large;
+        text-transform: uppercase;
+    }
+
+    #cpuImg{
+        display: flex;
+        justify-content: center;
+        height: 250px;
+
+    }
+
+    @supports(object-fit: cover){
+        #cpuImg img{
+          height: 90%;
+          width: 90%;
+          object-fit: contain;
+          object-position: center center;
+          border-radius: 1rem;
+          filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.9));
+
+        }
+
+    }
+
+    #YoutubeVideo{
+        text-align: center;
+        width: 500px;
+        height: 400px;
+
+
+    }
+
+    .containerTable{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    #cpuTable th, #cpuTable td{
+        border: 1px rgba(0, 0, 0, 0.021) solid;
+        text-align: center;
+    }
+
+    #cpuTable th{
+        background-color: rgb(80, 150, 255);
+        text-transform: uppercase;
+        font-size: medium;
+        padding: 1rem;
+    }
+
+    #cpuTable td{
+        background-color: rgba(0, 0, 0, 0.274);
+        text-transform: capitalize;
+        font-size: small;
+        padding: 0.5rem;
+    }
+
+    .ContainerFooter{
+        background-color: #040325;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(26,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23040325'/%3E%3Cstop offset='1' stop-color='%23070621'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(180,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23020B52' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23020B52' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(264,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23020B52' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23020B52' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background by SVGBackgrounds.com */
+    }
+
+    #siteMapTitle{
+        text-align: center;
+        margin: 0.5rem 0 0.5rem 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: medium;
+        text-transform: uppercase;
+        color: blanchedalmond;
+
+    }
+
+    .containerSponsor{
+        display: flex;
+    }
+
+    #mapSiteList{
+        color: blanchedalmond;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .sponsorText{
+        color: blanchedalmond;
+        text-align: center;
+
+    }
+
+    #sponsorList{
+        list-style: none;
+    }
+
+    .copyRight{
+        color: white;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: x-small;
+
+    }
+
+                                            /*-----------Estilos del mantenimiento.html---------*/
+
+    #containerCards{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 2rem;
+
+    }
+
+    .containerMain{
+        display: flex;
+        width: 100%;
+        padding-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(211, 211, 211, 0.438);
+
+    }
+
+    .cardImg{
+        width: 70%;
+        border-radius: 8px;
+    }
+
+    .mttoCardTitle{
+        font-size: x-large;
+        text-transform: uppercase;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .mttoCardText{
+        font-size: medium;
+        text-align: center;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .btnCard{
+        padding: 1rem 2rem;
+        border: 1px white solid;
+        background-color: grey;
+        border-radius: 5px;
+        color: white;
+        font-size: medium;
+    }
+
+    #tablaPrecios{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+        align-items: center;
+    }
+
+    .generaltitle{
+        font-size: x-large;
+        text-align: center;
+        text-decoration: underline;
+        margin: 0 0 2rem 0;
+    }
+
+    #containerMarks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+
+                                    /*-----------Estilos del index.html---------*/
+                                        /*-----------Vista PC---------*/
+
+@media only screen and (min-width:1200px) {
+
+    #bodyGrid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+                            'header'
+                            'main'
+                            'section'
+                            'footer';
+
+    }
+
+    .mainHeader{
+        display: grid;
+        grid-area: header;
+        grid-template-columns: 100%;
+        grid-template-rows: 100% ;
+        grid-template-areas:
+                            'bigheader';
+
+
+    }
+
+    #containerHeaderIndex{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 15% 60% 30%;
+        grid-template-areas:
+                            'logo navbar info';
+        grid-area: bigheader;
+
+    }
+
+    #containerLogo{
+        display: flex;
+        width: 100%;
+        grid-area: logo;
+        width: 100%;
+       justify-content: start;
+    }
+
+    #navBar{
+        grid-area: navbar;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #rowList{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    .listMobile{
+        list-style: none;
+        text-align: left;
+        border-bottom: rgb(22, 133, 177) 2px solid;
+        padding: 0.5rem;
+    }
+
+    .textNavbar{
+        color: rgb(20, 118, 156);
+        font-weight: 500;
+        font-size: large;
+        text-decoration: none;
+
+    }
+
+    #boxInfo{
+        grid-area: info;
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        font-size: small;
+        text-align: center;
+    }
+
+    .boxinfoText{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        color: rgba(0, 0, 0, 0.788);
+    }
+
+    main{
+        margin-bottom: 2rem;
+        margin-top: 0;
+    }
+
+    #header__Image{
+        display: flex;
+        height: 600px ;
+        flex-direction: column;
+        background-image: url(../img/Headerbg.jpg);
+        margin-bottom: 1.5rem;
+        margin-top: 0;
+        align-items: center;
+        background-size: cover;
+
+    }
+
+    .image_Title{
+        text-align: center;
+        color: white;
+        font-size: x-large;
+        text-transform: uppercase;
+        margin: 15rem 0 0.8rem 0;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+
+    .image_Paragraph{
+        text-align: center;
+        color: white;
+        font-size: large;
+        margin: 0.5rem 0 0 0;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+
+    .containerIndexMain{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(214, 209, 189, 0.322);
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    #containerButton{
+        margin-top: 5rem;
+    }
+
+    .buttonMain{
+        text-align: center;
+        padding: 20px;
+        border: 1px white solid;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.212);
+
+    }
+
+    .containerIndexMain{
+        display: flex;
+        grid-area: section;
+    }
+
+    .containerIndexCards{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    }
+
+    .imgCard{
+        width: 500px;
+        border-radius: 10px;
+    }
+
+    .titleCardIndex{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: x-large;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-shadow: blue 0.1em 0.1em 1.1em;
+
+    }
+
+    .serviceDescription{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0 10rem 0 10rem;
+        font-size: large;
+
+    }
+
+    #sectionVideoBox{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        grid-area: section;
+
+    }
+
+    .sectionMediumTitle{
+        text-align: center;
+        margin: 5rem 0 1rem 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: large;
+        text-transform: uppercase;
+    }
+
+    #cpuImg{
+        display: flex;
+        justify-content: center;
+        height: 500px;
+
+    }
+
+    @supports(object-fit: cover){
+        #cpuImg img{
+          height: 90%;
+          width: 90%;
+          object-fit: contain;
+          object-position: center center;
+          border-radius: 1rem;
+          filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.9));
+
+        }
+
+    }
+
+    #YoutubeVideo{
+        text-align: center;
+        width: 900px;
+        height: 400px;
+
+
+    }
+
+    .containerTable{
+        display: flex;
+        justify-content: center;
+    }
+
+    #cpuTable th, #cpuTable td{
+        border: 1px rgba(0, 0, 0, 0.021) solid;
+        text-align: center;
+    }
+
+    #cpuTable th{
+        background-color: rgb(80, 150, 255);
+        text-transform: uppercase;
+        font-size: large;
+    }
+
+    #cpuTable td{
+        background-color: rgba(0, 0, 0, 0.274);
+        text-transform: capitalize;
+        font-size: large;
+        padding: 0.5rem;
+    }
+
+    .ContainerFooter{
+        background-color: #040325;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(26,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23040325'/%3E%3Cstop offset='1' stop-color='%23070621'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(180,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23020B52' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23020B52' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(264,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23020B52' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23020B52' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background by SVGBackgrounds.com */
+    }
+
+    #siteMapTitle{
+        text-align: center;
+        margin: 0.5rem 0 0.5rem 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: medium;
+        text-transform: uppercase;
+        color: blanchedalmond;
+
+    }
+
+    .containerSponsor{
+        display: flex;
+    }
+
+    #mapSiteList{
+        color: blanchedalmond;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .sponsorText{
+        color: blanchedalmond;
+        text-align: center;
+
+    }
+
+    #sponsorList{
+        list-style: none;
+    }
+
+    .copyRight{
+        color: white;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: medium;
+
+    }
+
+                                                /*-----------Estilos del mantenimiento.html---------*/
+
+    #containerCards{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        margin-top: 2rem;
+
+    }
+
+    .containerMain{
+        display: flex;
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(211, 211, 211, 0.438);
+
+    }
+
+    .cardImg{
+        width: 80%;
+        height: 300px;
+        border-radius: 8px;
+    }
+
+    .mttoCardTitle{
+        font-size: x-large;
+        text-transform: uppercase;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .mttoCardText{
+        font-size: medium;
+        text-align: center;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .btnCard{
+        padding: 1rem 2rem;
+        border: 1px white solid;
+        background-color: grey;
+        border-radius: 5px;
+        color: white;
+        font-size: medium;
+    }
+
+    #tablaPrecios{
+        display: flex;
+        flex-direction: column;
+        margin: 4rem 0;
+        align-items: center;
+    }
+
+    .generaltitle{
+        font-size: x-large;
+        text-align: center;
+        text-decoration: underline;
+        margin: 0 0 4rem 0;
+    }
+
+    #containerMarks{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+}
