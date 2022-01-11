@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
     <title>Zearix Tech</title>
 </head>
     <body>
@@ -15,17 +17,39 @@
 
             <div id="containerHeaderIndex">
 
-            <div id="containerLogo">
-                <img id="logo" src="img/Logo.jpg" alt="Logo">
-            </div>
-
-            <div id="boxInfo">
-                <h3 class="boxinfoText">Cra 1 #20-06 Bogotá</h3>
-                <h3 class="boxinfoText">Horarios: L-V 8:00-17:00</h3>
-                <h3 class="boxinfoText">+57 3194065349</h3>
-            </div>
-
-
+            <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+                <div class="container-fluid">
+                        <img src="/img/Logo.png" alt="">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/pages/mantenimiento.html">Mantenimiento</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/pages/pcgamer.html">PC Gamer</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/pages/portatiles.html">Portátiles</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/pages/contacto.html">Contácto</a>
+                      </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <p class="h6">Cra 1 #20-06 Bogotá</h3>
+                            <p class="h6">Horarios: L-V 8:00-17:00</h3>
+                            <p class="h6">+57 3194065349</h3>
+                    </span>
+                  </div>
+                </div>
+              </nav>
+<!--Nav anterior
             <nav class="navBar">
                 <ul id="rowList">
                     <li class="listMobile"><a class="textNavbar" href="index.html">Home</a></li>
@@ -35,31 +59,32 @@
                     <li class="listMobile"><a class="textNavbar" href="pages/contacto.html">Contácto</a></li>
                 </ul>
             </nav>
-
+-->
             </div>
 
         </header>
 
 <main>
     <div id="header__Image">
-            <h2 class="image_Title" >Zearix es tu mejor aliado tecnológico</h2>
+            <h2 class="image_Title">Zearix es tu mejor aliado tecnológico</h2>
             <p class="image_Paragraph">Contácto inmediato vía WhatsApp</p>
         <div id="containerButton">
-                <a class="buttonMain" href="#">Contáctanos</a>
+            <a href="https://google.com" class="btn btn-outline-light btn-lg">Contáctanos</a>
         </div>
     </div>
 
 
 </main>
-        <section class="containerIndexMain" >
-    <div>
+        <section class="container-xxl" >
+
             <div class="containerIndexCards">
+                <img class="imgCard" src="img/gaming.jpg" width="300px" height="300px" alt="hardware">
+                <h4 class="wow animate__bounceInLeft titleCardIndex">EQUIPOS GAMER DE ALTO RENDIMIENTO</h4>
+                <p class="serviceDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat quae iste expedita a explicabo nihil amet inventore, enim quia, at molestias adipisci impedit obcaecati eum earum atque beatae. Quaerat?
 
-                <img class="imgCard" src="img/gaming.jpg" width="300px" height="300px" alt="gaming">
-                <h4 class="wow animate__bounceInLeft titleCardIndex">Equipos gamer de alto rendimiento</h4>
-                <p class="serviceDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat quae iste expedita a explicabo nihil amet inventore, enim quia, at molestias adipisci impedit obcaecati eum earum atque beatae. Quaerat?</p>
-
+                </p>
             </div>
+    
 
             <div class="containerIndexCards">
                 <img class="imgCard" src="img/hardware.jpg" width="300px" height="300px" alt="hardware">
@@ -91,26 +116,32 @@
 
             </div>
 
-            <div class="containerTable">
+            <div class="container-sm">
 
-                <table id="cpuTable">
-				<tr>
-					<th>Procesador</th>
-					<th>Nucleos</th>
-					<th>Velocidad</th>
-					<th>Precio</th>
-					<th>TDP</th>
-				</tr>
-				<tr>
-					<td>Ryzen 5</td>
-					<td>4</td>
-					<td>4.2 Ghz</td>
-					<td>$320</td>
-					<td>100°</td>
-				</tr>
+            </table>
 
-			    </table>
+                <table class="table table-striped text-center">
+                    <thead>
+                      <tr>
+                        <th scope="col">Procesador</th>
+                        <th scope="col">Nucleos</th>
+                        <th scope="col">Velocidad</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">TDP</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Ryzen 5</td>
+                        <td>4</td>
+                        <td>4.2 GHz</td>
+                        <td>$320</td>
+                        <td>100°</td>
+                      </tr>
+                    </tbody>
+                  </table>
         </div>
+
 		</article>
 	</section>
 
@@ -148,6 +179,8 @@
         <script>
         new WOW().init();
         </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     </body>
 </html>
