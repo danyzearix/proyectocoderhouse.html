@@ -5,75 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pcgamer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    
 </head>
     <body>
-        <header>
-           <img src="/img/Logo.jpg" alt="">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="mantenimiento.html">Mantenimiento</a></li>
-                    <li><a href="pcgamer.html">Pc gamer</a></li>
-                    <li><a href="portatiles.html">Portátiles</a></li>
-                    <li><a href="contacto.html">Contácto</a></li> 
-                </ul>   
-            </nav>
-        </header>
+        <div id="bodyGrid">
+            <header class="mainHeader">
+    
+                <div id="containerHeaderIndex">
+    
+                <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+                    <div class="container-fluid">
+                            <img src="/img/Logo.png" alt="">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/mantenimiento.html">Mantenimiento</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/pcgamer.html">PC Gamer</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/portatiles.html">Portátiles</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contácto</a>
+                          </li>
+                        </ul>
+                        <span class="navbar-text">
+                            <p class="h6">Cra 1 #20-06 Bogotá</h3>
+                                <p class="h6">Horarios: L-V 8:00-17:00</h3>
+                                <p class="h6">+57 3194065349</h3>
+                        </span>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+            </header>
 
         <main>
-            <div>
-                <h1>cotización</h1>
+            <div class="container mb-3">
+                <h1 class="text-uppercase text-center my-5"">cotización</h1>
+
+                <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Nombre</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">E-mail</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Ciudad</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Bogotá, Cali, Medellin...">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Dirección</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Cra, Av, Calle..">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">Profesión</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Presupuesto</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Marca favorita</legend>
+                        <div class="col-sm-10">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">Intel</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">AMD</label>
+                          </div>
+
+                        </fieldset>
+
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Mensaje</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Dejanos un mensaje aquí">
+                          </div>
+                          
+                          
+                    <div class="col-12 d-flex my-5">
+                      <button type="submit" class="btn btn-primary mx-auto">Enviar</button>
+                    </div>
+                  </form>
+                    
             </div>
                 
-            <div id="computerForm">
-                <form action="get" id="multiForm">
-                    <ul>
-                        <li>
-                            <label for="name">Nombre:</label>  
-                            <input type="text" id="name" name="user_name">
-                        </li>
-                        <li>
-                            <label for="email">Email:</label>  
-                            <input type="email" id="email" name="user_email">
-                        </li>
-                        <li>
-                            <label for="city">Ciudad:</label>  
-                            <input type="text" id="city" name="user_city">
-                        </li>
-                        <li>
-                            <label for="adress">Dirección:</label>  
-                            <input type="text" id="adress" name="user_adress">
-                        </li>
-                        <li>
-                            <label for="profesion">Profesión:</label>  
-                            <input type="text" id="profesion" name="user_profesion">
-                        </li>
-                        <li><label for="budget">Presupuesto:</label>  
-                            <input type="number" id="budget" name="user_budget">
-                        </li>
-                        <li><label for="brand">Marca favorita:</label>  
-                            <input type="radio" id="brand" name="user_brand" value="1">AMD
-                            <input type="radio" id="brand" name="user_brand" value="1">INTEL
-                        </li>
-                        <li><label for="pay">Forma de pago:</label>  
-                            <input type="radio" id="pay" name="user_pay" value="1">Efectivo
-                            <input type="radio" id="pay" name="user_pay" value="1">Tarjeta de crédito
-                        </li>
-                        <li><label for="msg">Mensaje</label>  
-                            <input type="text" id="menssage" name="user_menssage">
-                        </li>
-                        <li>
-                            <button type="submit">Enviar formulario</button>
-                        </li>
-                    </ul>
-            </form>
-            </div>
         </main>
 
-        <section id="newsSection">
+        <section class="container d-flex">
             <div>
-                <img src="../img/computarg.jpg" width="50%" alt="">
+                <h2 class="text-uppercase text-center my-5">NUESTRO PODCAST</h2>
+                <img src="/img/computarg.jpg" class="img-fluid text-center" alt="...">
                 <iframe src="https://open.spotify.com/embed/episode/14g82A9bA6f4JOelRJa2La?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </div>
         </section>
