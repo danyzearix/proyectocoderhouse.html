@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pcgamer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
     
 </head>
     <body>
@@ -24,19 +24,19 @@
                       <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="pages/mantenimiento.html">Mantenimiento</a>
+                            <a class="nav-link" href="mantenimiento.html">Mantenimiento</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="pages/pcgamer.html">PC Gamer</a>
+                            <a class="nav-link" href="pcgamer.html">PC Gamer</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="pages/portatiles.html">Portátiles</a>
+                            <a class="nav-link" href="portatiles.html">Portátiles</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="pages/contacto.html">Contácto</a>
+                            <a class="nav-link" href="contacto.html">Contácto</a>
                           </li>
                         </ul>
                         <span class="navbar-text">
@@ -50,8 +50,8 @@
                 </div>
             </header>
 
-        <main>
-            <div class="container mb-3">
+        <main class="container-sm">
+            <div class="container-sm d-flex flex-column mb-3 bg-light.bg-gradient">
                 <h1 class="text-uppercase text-center my-5"">cotización</h1>
 
                 <form class="row g-3">
@@ -59,15 +59,15 @@
                       <label for="inputEmail4" class="form-label">Nombre</label>
                       <input type="email" class="form-control" id="inputEmail4">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                       <label for="inputPassword4" class="form-label">E-mail</label>
                       <input type="password" class="form-control" id="inputPassword4">
                     </div>
-                    <div class="col-12">
+                    <div class="col-6">
                       <label for="inputAddress" class="form-label">Ciudad</label>
                       <input type="text" class="form-control" id="inputAddress" placeholder="Bogotá, Cali, Medellin...">
                     </div>
-                    <div class="col-12">
+                    <div class="col-10">
                       <label for="inputAddress2" class="form-label">Dirección</label>
                       <input type="text" class="form-control" id="inputAddress2" placeholder="Cra, Av, Calle..">
                     </div>
@@ -75,7 +75,7 @@
                       <label for="inputCity" class="form-label">Profesión</label>
                       <input type="text" class="form-control" id="inputCity">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label for="inputCity" class="form-label">Presupuesto</label>
                         <input type="text" class="form-control" id="inputCity">
                       </div>
@@ -93,7 +93,7 @@
 
                         </fieldset>
 
-                        <div class="col-12">
+                        <div class="col-10">
                             <label for="inputAddress" class="form-label">Mensaje</label>
                             <input type="text" class="form-control" id="inputAddress" placeholder="Dejanos un mensaje aquí">
                           </div>
@@ -108,56 +108,67 @@
                 
         </main>
 
-        <section class="container d-flex">
-            <div>
+        <section class="container-fluid d-flex flex-column mx-auto bg-primary p-2 text-dark bg-opacity-10">
+            <div class="container-md d-flex flex-column align-items-center">
                 <h2 class="text-uppercase text-center my-5">NUESTRO PODCAST</h2>
-                <img src="/img/computarg.jpg" class="img-fluid text-center" alt="...">
-                <iframe src="https://open.spotify.com/embed/episode/14g82A9bA6f4JOelRJa2La?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            </div>
+                <img src="/img/computarg.jpg" height="500px" width="700px" class="img-fluid mb-3" alt="...">
+              </div>
+
+              <div class="container d-flex mx-auto my-6">
+
+                <iframe class="mx-auto mb-5" src="https://open.spotify.com/embed/episode/4caxVZOrZIFyxSdcRDoK1Q?utm_source=generator" width="70%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+              
+              </div>
         </section>
 
-        <article>
-            <div class="conteninerBlog">
+        <article class="mt-5">
+            <div class="container-lg d-flex flex-column mx-auto">
             
-            <div class="rowBlog">
-                <img src="../img/ddr5.jpg" alt="">
-                <h5>Nuevas RAM DDR5</h5>
-                <p>Analizamos las nuevas memorias ram de la generación 5, te lo contamos todo aquí</p>
-                <button class="blogBtn"><a href="blog">#</a>Leer más...</button>
-            </div>
+              <div class="card mx-auto text-center mb-4 shadow-lg p-3 mb-5 bg-body rounded" style="width: 70%;">
+                <img src="/img/ddr5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nuevas memorias RAM DDR5</h5>
+                  <p class="card-text">Analizamos las nuevas memorias ram de la generación 5, te lo contamos todo aquí</p>
+                  <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+              </div>
 
-            <div class="rowBlog">
-                <img src="../img/ssdgen4.jpg" alt="">
-                <h5>Comprobamos la velocidad de los nuevos SSD NVME GEN 4</h5>
-                <p>Velocidad de lectura y escritura nunca antes vistas, descubre el benchmark</p>
-                <button class="blogBtn"><a href="blog">#</a>Leer más...</button>
-            </div>
+              <div class="card mx-auto text-center mb-4 shadow-lg p-3 mb-5 bg-body rounded" style="width: 70%;">
+                <img src="/img/ssdgen4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Comprobamos la velocidad de los nuevos SSD NVME GEN 4</h5>
+                  <p class="card-text">Velocidad de lectura y escritura nunca antes vistas, descubre el benchmark</p>
+                  <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+              </div>
 
-            <div class="rowBlog">
-                <img src="../img/2060nvidia.jpg" alt="">
-                <h5>¿Un posible refrito de la 2060 de nvidia en 2022?</h5>
-                <p>Corren rumores de que nvidia planea relanzar la 2060 de 2018 con nuevas caracteristicas</p>
-                <button class="blogBtn"><a href="blog">#</a>Leer más...</button>
-            </div>
+              <div class="card mx-auto text-center mb-4 shadow-lg p-3 mb-5 bg-body rounded" style="width: 70%;">
+                <img src="/img/2060nvidia.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">¿Un posible refrito de la 2060 de nvidia en 2022?</h5>
+                  <p class="card-text">Corren rumores de que nvidia planea relanzar la 2060 de 2018 con nuevas caracteristicas</p>
+                  <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+              </div>
 
-            <div class="rowBlog">
-                <img src="../img/silicio.jpg" alt="">
-                <h5>La crisis del silicio no para</h5>
-                <p>La luz al final del tunel aun no aparece y los expertos aseguran que en 2022 esta crisis puede agudizarse</p>
-                <button class="blogBtn"><a href="blog">#</a>Leer más...</button>
-            </div>
+              <div class="card mx-auto text-center mb-4 shadow-lg p-3 mb-5 bg-body rounded" style="width: 70%;">
+                <img src="/img/silicio.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">La crisis del silicio no para...</h5>
+                  <p class="card-text">La luz al final del tunel aun no aparece y los expertos aseguran que en 2022 esta crisis puede agudizarse</p>
+                  <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+              </div>
 
         </div>
 
         </article>
 
         <section>
+          
+          <h3 class="generaltitle"">MARCAS</h3>
 
-            
-
-            <h3>MARCAS</h3>
-
-        <div id="marcas">
+        <div id="containerMarks">
             <div><img src="../img/corsair.png" alt="marcacorsair" height="90px"></div>
 
             <div><img src="../img/intel.png" alt="marcacorsair" height="90px"></div>
@@ -166,34 +177,34 @@
 
             <div><img src="../img/nvidia.png" alt="marcacorsair" height="90px"></div>
 
-            <div><img src="../img/corsair.png" alt="marcacorsair" height="90px"></div>
         </div>
         </section>
 
-        <footer>
-            <h3>MAPA DE SITIO</h3>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="mantenimiento.html">Mantenimiento</a></li>
-                <li><a href="pcgamer.html">Pc gamer</a></li>
-                <li><a href="portatiles.html">Portátiles</a></li>
-                <li><a href="contacto.html">Contácto</a></li> 
+        <footer class="ContainerFooter">
+        
+            <h4 id="siteMapTitle">MAPA DE SITIO</h4>
+            <ul id="mapSiteList">
+                <li><a id="mapSiteList" href="index.html">Home</a></li>
+                <li><a id="mapSiteList" href="/pages/mantenimiento.html">Mantenimiento</a></li>
+                <li><a id="mapSiteList" href="/pages/pcgamer.html">Pc gamer</a></li>
+                <li><a id="mapSiteList" href="/pages/portatiles.html">Portátiles</a></li>
+                <li><a id="mapSiteList" href="/pages/contacto.html">Contácto</a></li> 
             </ul>
             
-            <h3>PATROCINADORES</h3>
+            <div id="containerSponsor">
     
-            <ol>
-                <li>AMD</li>
-                <li>NVIDIA</li>
-                <li>COOLERMASTER</li>
-                <li>TERMALTAKE</li>
+                <h4 id="siteMapTitle">PATROCINADORES</h4>
     
-                <H3>LINK DE INTERÉS</H3>
-                <a href="https://google.com">Google</a>
-                <a href="https://asus.com">Portatiles económicos</a>
-                <a href="https://teamgroup.com">Ssd's nuevos</a>
+                    <ol id="sponsorList">
+                        <li class="sponsorText" >AMD</li>
+                        <li class="sponsorText">NVIDIA</li>
+                        <li class="sponsorText">COOLERMASTER</li>
+                        <li class="sponsorText">TERMALTAKE</li>
+    
                 
-            </ol>
-            &copy;2021 ZEARIX
+                    </ol>
+            </div>
+    
+        <div class="copyRight">&copy;ZEARIX-2021 - Desarrollador por: DSMuñoz</div>
     
         </footer>

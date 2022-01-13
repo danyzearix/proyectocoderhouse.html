@@ -336,6 +336,15 @@
         align-items: center;
     }
 
+    /*-----------Estilos del pcgamer.html---------*/
+
+    #podcastImage{
+        height: 10%;
+        width: 40%;
+
+    }
+    
+    
 }
 
                                     /*-----------Estilos del index.html---------*/
