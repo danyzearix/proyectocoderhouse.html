@@ -5,56 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portatiles</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
-    <body>
-        <header>
-           <img src="/img/Logo.jpg" alt="">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="mantenimiento.html">Mantenimiento</a></li>
-                    <li><a href="pcgamer.html">Pc gamer</a></li>
-                    <li><a href="portatiles.html">Portátiles</a></li>
-                    <li><a href="contacto.html">Contácto</a></li> 
-                </ul>   
-            </nav>
+<body>
+    <div id="bodyGrid">
+        <header class="mainHeader">
+
+            <div id="containerHeaderIndex">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+                <div class="container-fluid">
+                        <img src="../img/Logo.png" alt="">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="mantenimiento.html">Mantenimiento</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pcgamer.html">PC Gamer</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="portatiles.html">Portátiles</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contácto</a>
+                      </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <p class="h6">Cra 1 #20-06 Bogotá</h3>
+                            <p class="h6">Horarios: L-V 8:00-17:00</h3>
+                            <p class="h6">+57 3194065349</h3>
+                    </span>
+                  </div>
+                </div>
+              </nav>
+            </div>
         </header>
-        <main id="containerLaptop">
+
+        <main class="container mb-5">
             <section>
             <div>
-                <img src="../img/portatiles.jpg" alt="Portatiles">
+                <img src="../img/portatiles.jpg" width="100%" height="auto" alt="Portatiles">
             </div>
         </section>
 
-        <section class="containerServices">
-            <div class="containerSvsBig">
-            <h2>SERVICIOS</h2>
+        <section class="container-fluid d-flex flex-column text-center bg-primary bg-gradient text-dark bg-opacity-10">
+            
+            <h2 class="mt-5">SERVICIOS</h2>
 
-                <div class="containerSvs">
-                    <img class="imgPortatiles" src="../img/mantolaptop.jpg" alt="hombre haciendo mantenimiento a un portatil" height="500px">
-                    <h3 class="titleText">mantenimiento preventivo y correctivo</h3>
+                <div class="containerIndexCards">
+                    <img class="imgCard" src="../img/mantolaptop.jpg" width="300px" height="300px" alt="hombre haciendo mantenimiento a un portatil">
+                    <h3 class="titleCardIndex">mantenimiento preventivo y correctivo</h3>
                     <p class="bodyText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque error fuga cum quasi alias ad, velit magni hic, culpa repellat eaque enim asperiores dolores ipsa, molestiae et dolorem saepe illo.</p>
                     <a href="#">
-                        <button class="blogBtn">Cotizar</button>
+                        <button class="btn btn-primary">Cotizar</button>
                     </a>
                 </div>
 
-                <div class="containerSvs">
-                    <img src="../img/repotenciar.jpg" alt="ssd contra hdd">
-                    <h3 class="titleText">Repotenciamos tu equipo</h3>
+                <div class="containerIndexCards">
+                    <img class="imgCard" src="../img/repotenciar.jpg" width="300px" height="300px" alt="ssd contra hdd">
+                    <h4 class="titleCardIndex">Repotenciamos tu equipo</h3>
                     <p class="bodyText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quibusdam architecto laborum error. Dolores, quaerat, non laborum mollitia rem impedit fugiat illo itaque asperiores ullam quis. Vero expedita temporibus illum.</p>
                     <a href="#">
-                        <button class="blogBtn">Cotizar</button>
+                        <button class="btn btn-primary">Cotizar</button>
                     </a>
                 </div>
 
-                <div class="containerSvs">
-                    <img src="../img/baterias.jpg" alt="bateria de portatil">
-                    <h3 class="titleText">Baterias y repuestos</h3>
+                <div class="containerIndexCards">
+                    <img class="imgCard" src="../img/baterias.jpg" width="300px" height="300px" alt="bateria de portatil">
+                    <h3 class="titleCardIndex">Baterias y repuestos</h3>
                     <p class="bodyText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quod eius optio, est perspiciatis ipsa iusto, molestias natus saepe quae pariatur distinctio nobis fugiat provident at velit in corrupti quam?</p>
                     <a href="#">
-                        <button class="blogBtn">Cotizar</button>
+                        <button class="btn btn-primary">Cotizar</button>
                     </a>
                 </div>
 
@@ -63,33 +92,46 @@
             
         </main>
 
-        <footer>
-            <h3>MAPA DE SITIO</h3>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="mantenimiento.html">Mantenimiento</a></li>
-                <li><a href="pcgamer.html">Pc gamer</a></li>
-                <li><a href="portatiles.html">Portátiles</a></li>
-                <li><a href="contacto.html">Contácto</a></li> 
+        <section>
+          
+            <h3 class="generaltitle"">MARCAS</h3>
+  
+          <div id="containerMarks">
+              <div><img src="../img/corsair.png" alt="marcacorsair" height="90px"></div>
+  
+              <div><img src="../img/intel.png" alt="marcacorsair" height="90px"></div>
+  
+              <div><img src="../img/msi-logo-2.png" alt="marcacorsair" height="90px"></div>
+  
+              <div><img src="../img/nvidia.png" alt="marcacorsair" height="90px"></div>
+  
+          </div>
+          </section>
+
+          <footer class="ContainerFooter">
+        
+            <h4 id="siteMapTitle">MAPA DE SITIO</h4>
+            <ul id="mapSiteList">
+                <li><a id="mapSiteList" href="index.html">Home</a></li>
+                <li><a id="mapSiteList" href="/pages/mantenimiento.html">Mantenimiento</a></li>
+                <li><a id="mapSiteList" href="/pages/pcgamer.html">Pc gamer</a></li>
+                <li><a id="mapSiteList" href="/pages/portatiles.html">Portátiles</a></li>
+                <li><a id="mapSiteList" href="/pages/contacto.html">Contácto</a></li> 
             </ul>
             
-            <h3>PATROCINADORES</h3>
     
-            <ol>
-                <li>AMD</li>
-                <li>NVIDIA</li>
-                <li>COOLERMASTER</li>
-                <li>TERMALTAKE</li>
-    
-                <H3>LINK DE INTERÉS</H3>
-                <a href="https://google.com">Google</a>
-                <a href="https://asus.com">Portatiles económicos</a>
-                <a href="https://teamgroup.com">Ssd's nuevos</a>
-                
-            </ol>
-            &copy;2021 ZEARIX
+        <div class="copyRight">&copy;ZEARIX-2021 - Desarrollador por: DSMuñoz</div>
     
         </footer>
-    
-        </body>
-    </html>
+    </div>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
