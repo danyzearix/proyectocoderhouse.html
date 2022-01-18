@@ -8,6 +8,10 @@
   font-family: "Lato", sans-serif;
 }
 
+.btn {
+  border-radius: 20px;
+}
+
 /*----------------------------------------------Estilos del index.html-------------------------------------------------------*/
 /*----------------------------------------------------Vista movil-------------------------------------------------------*/
 @media only screen and (max-width: 600px) {
@@ -760,13 +764,14 @@
     -webkit-box-shadow: skyblue 0.1em 0.1em 1.1em;
             box-shadow: skyblue 0.1em 0.1em 1.1em;
   }
+  /*SASS MAP APLICADO*/
   .titleCardIndex {
     font-size: x-large;
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    text-shadow: rgba(0, 0, 0, 0.555) 0.1em 0.1em 1.1em;
+    text-shadow: #006eff 0.1em 0.1em 1.1em;
     -webkit-animation-duration: 3s;
             animation-duration: 3s;
     -webkit-animation-name: apear;
@@ -927,24 +932,6 @@
     width: 80%;
     height: 300px;
     border-radius: 8px;
-  }
-  .mttoCardTitle {
-    font-size: x-large;
-    text-transform: uppercase;
-    margin: 1rem 0 1rem 0;
-  }
-  .mttoCardText {
-    font-size: medium;
-    text-align: center;
-    padding: 0 1rem 1rem 1rem;
-  }
-  .btnCard {
-    padding: 1rem 2rem;
-    border: 1px white solid;
-    background-color: grey;
-    border-radius: 5px;
-    color: white;
-    font-size: medium;
   }
   #tablaPrecios {
     display: -webkit-box;

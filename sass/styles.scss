@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import 'variables'; 
 @import 'mixins';
+@import 'maps';
 
 //Reset del CSS//
 *{
@@ -13,6 +14,10 @@
 
 *{
     font-family: $font;
+}
+
+.btn{
+    border-radius: 20px;
 }
 
 /*----------------------------------------------Estilos del index.html-------------------------------------------------------*/
@@ -666,14 +671,15 @@
         transform: scale(1.1,1);
         box-shadow: skyblue 0.1em 0.1em 1.1em;
     }
-
+    
+    /*SASS MAP APLICADO*/
     .titleCardIndex{
         font-size: x-large;
         font-weight: $titles;
         text-transform: uppercase;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        text-shadow: rgba(0, 0, 0, 0.555) 0.1em 0.1em 1.1em;
+        text-shadow: map-get($map: $shadows, $key: blueShadow ) 0.1em 0.1em 1.1em;
 
         animation-duration: 3s;
         animation-name: apear;
@@ -817,27 +823,6 @@
         width: 80%;
         height: 300px;
         border-radius: 8px;
-    }
-
-    .mttoCardTitle{
-        font-size: x-large;
-        text-transform: uppercase;
-        margin: 1rem 0 1rem 0;
-    }
-
-    .mttoCardText{
-        font-size: medium;
-        text-align: center;
-        padding: 0 1rem 1rem 1rem;
-    }
-
-    .btnCard{
-        padding: 1rem 2rem;
-        border: 1px white solid;
-        background-color: grey;
-        border-radius: 5px;
-        color: white;
-        font-size: medium;
     }
 
     #tablaPrecios{
