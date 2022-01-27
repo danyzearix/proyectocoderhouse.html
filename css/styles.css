@@ -42,7 +42,7 @@
   }
   .imageTitle {
     text-align: center;
-    font-weight: bold;
+    font-weight: 200;
     color: white;
     text-transform: uppercase;
     margin: 10rem 0 0.8rem 0;
@@ -53,11 +53,11 @@
     color: white;
     margin: 0.5rem 0 5rem 0;
     text-shadow: black 0.1em 0.1em 0.2em;
-    width: 29ch;
+    width: 25ch;
     border-right: 2px solid;
     white-space: nowrap;
-    -webkit-animation: typing 1.4s steps(29), blink 0.5s infinite step-end alternate;
-            animation: typing 1.4s steps(29), blink 0.5s infinite step-end alternate;
+    -webkit-animation: typing 1.4s steps(25), blink 0.5s infinite step-end alternate;
+            animation: typing 1.4s steps(25), blink 0.5s infinite step-end alternate;
     overflow: hidden;
   }
   @-webkit-keyframes typing {
@@ -167,6 +167,8 @@
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: section;
+    background-color: rgba(194, 194, 194, 0.514);
+    padding-bottom: 3rem;
   }
   #YoutubeVideo {
     text-align: center;
@@ -347,7 +349,7 @@
   }
   .imageTitle {
     text-align: center;
-    font-weight: bold;
+    font-weight: 200;
     color: white;
     text-transform: uppercase;
     margin: 10rem 0 0.8rem 0;
@@ -358,11 +360,11 @@
     color: white;
     margin: 0.5rem 0 5rem 0;
     text-shadow: black 0.1em 0.1em 0.2em;
-    width: 29ch;
+    width: 27ch;
     border-right: 2px solid;
     white-space: nowrap;
-    -webkit-animation: typing 1.4s steps(29), blink 0.5s infinite step-end alternate;
-            animation: typing 1.4s steps(29), blink 0.5s infinite step-end alternate;
+    -webkit-animation: typing 1.4s steps(27), blink 0.5s infinite step-end alternate;
+            animation: typing 1.4s steps(27), blink 0.5s infinite step-end alternate;
     overflow: hidden;
   }
   @-webkit-keyframes typing {
@@ -472,6 +474,8 @@
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: section;
+    background-color: rgba(194, 194, 194, 0.514);
+    padding-bottom: 3rem;
   }
   #YoutubeVideo {
     text-align: center;
@@ -669,7 +673,7 @@
   }
   .imageTitle {
     text-align: center;
-    font-weight: bold;
+    font-weight: 200;
     color: white;
     font-size: xx-large;
     text-transform: uppercase;
@@ -702,7 +706,7 @@
       border-color: transparent;
     }
   }
-  .image_Paragraph {
+  .imageParagraph {
     text-align: center;
     color: white;
     font-size: large;
@@ -767,11 +771,11 @@
   /*SASS MAP APLICADO*/
   .titleCardIndex {
     font-size: x-large;
-    font-weight: bold;
+    font-weight: 200;
     text-transform: uppercase;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    text-shadow: #006eff 0.1em 0.1em 1.1em;
+    text-shadow: rgba(0, 0, 0, 0.76) 0.1em 0.1em 1.1em;
     -webkit-animation-duration: 3s;
             animation-duration: 3s;
     -webkit-animation-name: apear;
@@ -814,13 +818,16 @@
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: section;
+    background-color: rgba(194, 194, 194, 0.514);
+    padding-bottom: 4rem;
   }
   .sectionMediumTitle {
-    font-weight: bold;
+    font-weight: 200;
+    font-size: x-large;
     text-align: center;
-    margin: 5rem 0 1rem 0;
-    font-size: large;
+    margin: 4rem 0 1rem 0;
     text-transform: uppercase;
+    text-decoration: underline;
   }
   #cpuImg {
     display: -webkit-box;

@@ -61,11 +61,11 @@
         color: white;
         margin: 0.5rem 0 5rem 0;
         text-shadow: black 0.1em 0.1em 0.2em;
-        width: 29ch;
+        width: 25ch;
         border-right: 2px solid;
         white-space: nowrap;
         
-        animation: typing 1.4s steps(29),
+        animation: typing 1.4s steps(25),
         blink .5s infinite step-end alternate;
         overflow: hidden;
 
@@ -144,6 +144,8 @@
         align-items: center;
         flex-direction: column;
         grid-area: section;
+        background-color: rgba(194, 194, 194, 0.514);
+        padding-bottom: 3rem;
 
     }
 
@@ -328,11 +330,11 @@
         color: white;
         margin: 0.5rem 0 5rem 0;
         text-shadow: black 0.1em 0.1em 0.2em;
-        width: 29ch;
+        width: 27ch;
         border-right: 2px solid;
         white-space: nowrap;
         
-        animation: typing 1.4s steps(29),
+        animation: typing 1.4s steps(27),
         blink .5s infinite step-end alternate;
         overflow: hidden;
 
@@ -411,6 +413,8 @@
         align-items: center;
         flex-direction: column;
         grid-area: section;
+        background-color: rgba(194, 194, 194, 0.514);
+        padding-bottom: 3rem;
 
     }
 
@@ -624,9 +628,9 @@
         50% {border-color: transparent;}
     }
 
-    .image_Paragraph{
+    .imageParagraph{
         text-align: center;
-        color: white;
+        color: rgb(255, 255, 255);
         font-size: large;
         margin: 0.5rem 0 0 0;
         text-shadow: black 0.1em 0.1em 0.2em;
@@ -679,7 +683,7 @@
         text-transform: uppercase;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        text-shadow: map-get($map: $shadows, $key: blueShadow ) 0.1em 0.1em 1.1em;
+        text-shadow: map-get($map: $shadows, $key: blackShadow ) 0.1em 0.1em 1.1em;
 
         animation-duration: 3s;
         animation-name: apear;
@@ -707,15 +711,18 @@
         align-items: center;
         flex-direction: column;
         grid-area: section;
+        background-color: rgba(194, 194, 194, 0.514);
+        padding-bottom: 4rem;
 
     }
 
     .sectionMediumTitle{
         font-weight: $titles;
+        font-size: x-large;
         text-align: center;
-        margin: 5rem 0 1rem 0;
-        font-size: large;
+        margin: 4rem 0 1rem 0;
         text-transform: uppercase;
+        text-decoration: underline;
     }
 
     #cpuImg{
